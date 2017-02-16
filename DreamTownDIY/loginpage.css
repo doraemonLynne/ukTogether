@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+/*css Reset*/
+
+html,
+body,
+div,
+ul,
+ol,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+dl {
+    list-style: none outside none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+iframe {
+    display: block;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+input,
+select,
+button {
+    border-width: 0;
+    outline: 0;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    content: "";
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*解决IE6\7兼容问题*/
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:visited {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*general*/
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(359deg);
+    }
+}
+
+@-ms-keyframes spin {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(359deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('font/font-awesome/fontawesome-webfont.eot?v=3.2.1');
+    src: url('font/font-awesome/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('font/font-awesome/fontawesome-webfont.woff?v=3.2.1') format('woff'), url('font/font-awesome/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), url('font/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'meng';
+    src: url('font/font1/jmhaibaomgzt.eot');
+    src: url('font/font1/jmhaibaomgzt.eot?#iefix') format('embedded-opentype'), url('font/font1/jmhaibaomgzt.woff') format('woff'), url('font/font1/jmhaibaomgzt.ttf') format('truetype'), url('font/font1/jmhaibaomgzt.svg#jmhaibaomgzt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'xiang';
+    src: url('font/font2/jmhaibaomgzt.eot');
+    src: url('font/font2/jmhaibaomgzt.eot?#iefix') format('embedded-opentype'), url('font/font2/jmhaibaomgzt.woff') format('woff'), url('font/font2/jmhaibaomgzt.ttf') format('truetype'), url('font/font2/jmhaibaomgzt.svg#jmhaibaomgzt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'xiao';
+    src: url('font/font3/jmhaibaomgzt.eot');
+    src: url('font/font3/jmhaibaomgzt.eot?#iefix') format('embedded-opentype'), url('font/font3/jmhaibaomgzt.woff') format('woff'), url('font/font3/jmhaibaomgzt.ttf') format('truetype'), url('font/font3/jmhaibaomgzt.svg#jmhaibaomgzt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'zhen';
+    src: url('font/font4/jmhaibaomgzt.eot');
+    src: url('font/font4/jmhaibaomgzt.eot?#iefix') format('embedded-opentype'), url('font/font4/jmhaibaomgzt.woff') format('woff'), url('font/font4/jmhaibaomgzt.ttf') format('truetype'), url('font/font4/jmhaibaomgzt.svg#jmhaibaomgzt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    background: #a2dadb;
+    min-width: 1400px;
+}
+.wrap{
+    width: 1380px;
+    margin: 0 auto;
+}
+/*general*/
+
+
+/*header*/
+
+header {
+    height: 20px;
+}
+
+
+/*header*/
+
+
+/*container*/
+
+.container {
+    padding: 10px;
+    height: 150px;
+}
+
+
+.LogoAndNav{
+    width: 1200px;
+    margin: 0 auto;
+}
+.logofont{
+    float: left;
+}
+.logofont .fir {
+    font-family: "meng";
+    font-size: 4em;
+    color: #F93713;
+    font-weight: 900;
+}
+
+.logofont .sec {
+    font-family: "xiang";
+    font-size: 2em;
+    color: #36B100;
+    font-weight: 900;
+}
+
+.logofont .thir {
+    font-family: "xiao";
+    font-size: 3em;
+    color: #F9AD00;
+    font-weight: 900;
+}
+
+.logofont .for {
+    font-family: "zhen";
+    font-size: 3em;
+    color: #F9AD00;
+    font-weight: 900;
+}
+
+.navigation {
+    float: right;
+}
+.navigation a {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    padding: 8px 0px;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #357180;
+    font-weight: 500;
+}
+
+.navigation a::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #357180;
+    content: "";
+    opacity: 0;
+    -webkit-transition: transform 0.3s, opacity 0.5s;
+    -o-transition: transform 0.3s, opacity 0.5s;
+    transition: transform 0.3s, opacity 0.5s;
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+}
+
+.navigation a:hover::before {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/*container*/
+
+
+/*main*/
+
+.main {
+    height: 330px;
+}
+
+
+/*login*/
+.loginframe {
+    float: right;
+    width: 350px;
+    height: 331px;
+    padding: 30px 0;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.frame {
+    padding: 10px;
+    width: 280px;
+    background: #fffaf6;
+    /*background: #F3B0AF;*/
+    margin: 0 auto;
+    border-radius: 4px;
+    color: #7e7975;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+.frame .heading {
+    border-bottom: 1px solid #EBE6E2;
+    padding-bottom: 10px;
+}
+
+.frame .heading .first {
+    color: #6c6763;
+    padding-right: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.frame .heading .middle {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.frame .heading .second a {
+    color: #ffb347;
+    /*color: #E73327;*/
+    padding-left: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.frame .content {
+    padding-top: 10px;
+}
+
+.frame .content label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #888;
+    margin: 5px 0;
+}
+
+.frame .content .usernameLabel:before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    content: "\f007";
+    margin-right: 5px;
+}
+
+.frame .content .passwordLabel:before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    content: "\f023";
+    margin-right: 5px;
+}
+
+.frame .content input {
+    border: 3px solid #ebe6e2;
+    padding: 10px 5px;
+    width: 250px;
+    -webkit-transition: border 0.3s;
+    -moz-transition: border 0.3s;
+    -o-transition: border 0.3s;
+    transition: border 0.3s;
+}
+
+.frame .content input:hover {
+    border: 3px solid #ccc;
+}
+
+.frame .content button {
+    margin: 20px 0;
+    background: #fbd568;
+    width: 250px;
+    padding: 10px 5px;
+    background-image: -webkit-linear-gradient(#fbd568 0%, #ffb347);
+    background-image: -o-linear-gradient(#fbd568 0%, #ffb347);
+    background-image: linear-gradient(#fbd568 0%, #ffb347);
+    /*background-image: -webkit-linear-gradient(#FCDF8B 0%, #DB9034);
+    background-image: -o-linear-gradient(#fbd568 0%, #ffb347);
+    background-image: linear-gradient(#FCDF8B 0%, #DB9034);*/
+    border-radius: 3px;
+    color: #fff;
+    text-shadow: 0 0 1px #aaa;
+}
+/*login*/
+/*trees*/
+.someTrees{
+    position: relative;
+}
+.trees1 {
+    position: absolute;
+}
+
+.tree-middle {
+    position: absolute;
+    background: url(images/tree1.png)no-repeat;
+    width: 143px;
+    height: 205px;
+    top: 10.8em;
+    left: 20em;
+}
+
+.tree-right {
+    float: right;
+    margin-top: 170px;
+    background: url(images/tree1.png)no-repeat;
+    width: 143px;
+    height: 205px;
+}
+
+.trees2 {
+    position: absolute;
+    left: 26em;
+}
+
+.big-tree {
+    position: absolute;
+    top: -31px;
+    background: url(images/tree.png)no-repeat;
+    width: 282px;
+    height: 405px;
+}
+
+.small-tree {
+    position: absolute;
+    top: 10.8em;
+    left: 12em;
+    background: url(images/tree1.png)no-repeat;
+    width: 143px;
+    height: 205px;
+}
+/*trees*/
+/*main*/
+/*road*/
+.road {
+    width: 100%;
+    margin-top: 40px;
+    height: 350px;
+    background: url(images/string.png)repeat-x 0 15%, #b1b1b2;
+}
+
+#car {
+    position: relative;
+    left: 0px;
+    top: -2.5em;
+}
+
+.carbody {
+    position: absolute;
+    right: 0;
+}
+
+.circle {
+    border: 10px solid #818282;
+    border-radius: 42%;
+    box-shadow: 0 0 0 15px #202121;
+    -webkit-animation:spin 2s infinite linear;
+    -moz-animation:spin 2s infinite linear;
+    -o-animation:spin 2s infinite linear;
+    animation:spin 2s infinite linear;
+
+}
+
+.circle1 {
+    position: absolute;
+    top: 4.7em;
+    right: 11em;
+}
+
+.circle2 {
+    position: absolute;
+    top: 4.7em;
+    right: 2em;
+}
+
+/*road*/
+
+

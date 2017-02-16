@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-11-08 15:18:55
+ * @version $Id$
+ */
+
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+    background: url(../images/adminloginbg.jpg) repeat top left;
+    font-family: "Malayalam MN";
+}
+
+button {
+    outline: 0;
+    -wekit-appearance: none;
+}
+
+.form-signin {
+    width: 400px;
+    height: 400px;
+    max-width: 330px;
+    padding: 15px;
+    margin: 5% auto;
+}
+
+.form-signin-content {
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.3), inset 0 1px rgba(255, 255, 255, 1), inset 0 -3px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.3), inset 0 1px rgba(255, 255, 255, 1), inset 0 -3px 2px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.3), inset 0 1px rgba(255, 255, 255, 1), inset 0 -3px 2px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.3), inset 0 1px rgba(255, 255, 255, 1), inset 0 -3px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.3), inset 0 1px rgba(255, 255, 255, 1), inset 0 -3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+    font-size: 26px;
+    color: #666;
+    text-align: center;
+}
+
+.form-signin input {
+    background: #f9f9f9;
+    border-radius: 5px;
+    -moz-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 3px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 3px 2px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 3px 2px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 3px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1), inset 0 3px 2px rgba(0, 0, 0, 0.1);
+    text-indent: 45px;
+}
+
+.form-signin .fa {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: 33px;
+    left: 20px;
+    font-size: 16px;
+    z-index: 100;
+    color: #777;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.form-signin .fa-user,
+.form-signin .fa-lock {
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-signin .fa:hover {
+    color: #52cfeb;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.beuti {
+    position: relative;
+    top: -98px;
+    left: 270px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    z-index: 50;
+    background: #52cfeb linear-gradient(#52cfeb, #42A2BC);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.35), inset 0 3px 2px rgba(255, 255, 255, 0.2), inset 0 -3px 2px rgba(0, 0, 0, 0.1), 0 0 0 10px #fff;
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.35), inset 0 3px 2px rgba(255, 255, 255, 0.2), inset 0 -3px 2px rgba(0, 0, 0, 0.1), 0 0 0 10px #fff;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.35), inset 0 3px 2px rgba(255, 255, 255, 0.2), inset 0 -3px 2px rgba(0, 0, 0, 0.1), 0 0 0 10px #fff;
+    -ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.35), inset 0 3px 2px rgba(255, 255, 255, 0.2), inset 0 -3px 2px rgba(0, 0, 0, 0.1), 0 0 0 10px #fff;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.35), inset 0 3px 2px rgba(255, 255, 255, 0.2), inset 0 -3px 2px rgba(0, 0, 0, 0.1), 0 0 0 10px #fff;
+}
+
+.beuti:hover,
+.beuti:active,
+.beuti:visited {
+    background: #52cfeb;
+}
+
+.fa-arrow-right:before {
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    top: -31px;
+    left: -22px;
+}
+
+.stuBtn {
+    width: 138px;
+    padding: 10px 0;
+    display: block;
+    margin: -20px auto;
+    font-size: 14px;
+    color: #996319;
+    background: #fbd568;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #D4A83A, 0 0 5px #aaa;
+}
+
+.stuBtn:hover {
+    color: #996319;
+    background: #EEB639;
+    border: none;
+    text-decoration: none;
+}

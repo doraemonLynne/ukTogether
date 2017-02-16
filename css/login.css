@@ -1,0 +1,507 @@
+@charset "utf-8";
+
+
+body{
+    /*background: url(../images/weather.png);*/
+    background: url(../images/foggy_birds_@2X.png);
+}
+/* animation-fadein */
+
+@-webkit-keyframes fadeinT {
+    0% {
+        opacity: 0;
+        transform: translateX(450px) translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(450px) translateY(100px);
+    }
+}
+
+@-moz-keyframes fadeinT {
+    0% {
+        opacity: 0;
+        transform: translateX(450px) translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(450px) translateY(100px);
+    }
+}
+
+@-ms-keyframes fadeinT {
+    0% {
+        opacity: 0;
+        transform: translateX(450px) translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(450px) translateY(100px);
+    }
+}
+
+@keyframes fadeinT {
+    0% {
+        opacity: 0;
+        transform: translateX(450px) translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(450px) translateY(100px);
+    }
+}
+
+
+/* animation-pulse */
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+    50% {
+        -webkit-box-shadow: 0 0 25px rgba(246, 208, 107, 0.9);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+    50% {
+        -moz-box-shadow: 0 0 25px rgba(246, 208, 107, 0.9);
+    }
+    100% {
+        -moz-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+}
+
+@-ms-keyframes pulse {
+    0% {
+        -ms-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+    50% {
+        -ms-box-shadow: 0 0 25px rgba(246, 208, 107, 0.9);
+    }
+    100% {
+        -ms-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(246, 208, 107, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+}
+
+.a-fadeinT {
+    -webkit-animation: fadeinT 1.5s 1s forwards;
+    -moz-animation: fadeinT 1.5s 1s forwards;
+    animation: fadeinT 1.5s 1s forwards;
+    animation-fill-mode: both; /*动画执行前后效果是否可见*/
+}
+
+.loginframe {
+    width: 380px;
+    height: 380px;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-radius: 25px;
+}
+
+.frame {
+    padding: 10px;
+    width: 380px;
+    height: 380px;
+    background: #ddd;
+    background: rgba(23, 25, 28, 0.1);
+    margin: 0 auto;
+    /*border: 1px solid #eee;*/
+    border-radius: 10px;
+    color: #7e7975;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 0 12px rgba(255, 255, 255, 0.4);
+    /*box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 1px 5px rgba(0,0,0,0.2), 0 0 0 12px rgba(255,255,255,0.4);*/
+}
+
+.frame .heading {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #EBE6E2;
+    padding-bottom: 10px;
+}
+
+.frame .heading .first {
+    color: #ffb347;
+    padding-right: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.frame .heading .middle {
+    color: #222;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.frame .heading .second a {
+    color: #ffb347;
+    /*color: #E73327;*/
+    padding-left: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.frame .content {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 90%;
+}
+
+.frame .content label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #ffb347;
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.frame .content input {
+    border:none;
+    border:1px solid #eaeaea;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 13px 0;
+    width: 100%;
+    margin: 0 auto;
+    text-indent: 7px;
+    font-size: 16px;
+}
+
+.frame .content input:focus {
+    -webkit-animation: pulse 1.5s infinite ease-in-out;
+    -moz-animation: pulse 1.5s infinite ease-in-out;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.frame .content button {
+    border:none;
+    display: block;
+    margin: 50px auto;
+    background: #fbd568;
+    width: 180px;
+    height: 50px;
+    padding: 15px 5px;
+    background-image: -webkit-linear-gradient(#fbd568 0%, #ffb347);
+    background-image: -o-linear-gradient(#fbd568 0%, #ffb347);
+    background-image: linear-gradient(#fbd568 0%, #ffb347);
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 0 0 1px #aaa;
+    font-size: 16px;
+}
+
+.frame .content button:hover {
+    -webkit-animation: pulse 1.5s infinite ease-in-out;
+    -moz-animation: pulse 1.5s infinite ease-in-out;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+
+/*login*/
+
+
+/*responsive web design*/
+
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone4/4s */
+    .frame {
+        width: 200px;
+        height: 200px;
+    }
+    .frame .heading{
+        height:8px;
+        line-height: 11px;
+    }
+    .frame .content label{
+        margin:3px 0;
+    }
+    .frame .content input{
+        margin:11px auto;
+        height: 26px;
+    }
+    .frame .content button{
+    	border:none;
+        margin:0 auto;
+        width:124px;
+        height: 20px;
+        line-height:0;
+    }
+    /* animation-fadein */
+
+    @-webkit-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(-47px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-47px) translateY(100px);
+        }
+    }
+
+    @-moz-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(-47px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-47px) translateY(100px);
+        }
+    }
+
+    @-ms-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(-47px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-47px) translateY(100px);
+        }
+    }
+
+    @keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(-47px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-47px) translateY(100px);
+        }
+    }
+
+}
+
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+    .frame {
+        width: 200px;
+        height: 200px;
+    }
+    .frame .heading{
+        height:8px;
+        line-height: 11px;
+    }
+    .frame .content label{
+        margin:3px 0;
+    }
+    .frame .content input{
+        margin:11px auto;
+        height: 26px;
+    }
+    .frame .content button{
+        margin:0 auto;
+        width:124px;
+        height: 20px;
+        line-height:0;
+    }
+    /* animation-fadein */
+
+    @-webkit-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(-27px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-27px) translateY(40px);
+        }
+    }
+
+    @-moz-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(-27px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-27px) translateY(40px);
+        }
+    }
+
+    @-ms-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(-27px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-27px) translateY(40px);
+        }
+    }
+
+    @keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(-27px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(-27px) translateY(40px);
+        }
+    }
+}
+
+
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 */
+    .frame {
+        width: 200px;
+        height: 200px;
+    }
+    .frame .heading{
+        height:8px;
+        line-height: 11px;
+    }
+    .frame .content label{
+        margin:3px 0;
+    }
+    .frame .content input{
+        margin:11px auto;
+        height: 26px;
+    }
+    .frame .content button{
+        margin:0 auto;
+        width:124px;
+        height: 20px;
+        line-height:0;
+    }
+    /* animation-fadein */
+
+    @-webkit-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(0) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0) translateY(100px);
+        }
+    }
+
+    @-moz-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(0) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0) translateY(100px);
+        }
+    }
+
+    @-ms-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(0) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0) translateY(100px);
+        }
+    }
+
+    @keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(0) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0) translateY(100px);
+        }
+    }
+
+}
+
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 Plus */
+    .frame {
+        width: 220px;
+        height: 226px;
+    }
+    .frame .heading{
+        height:8px;
+        line-height: 11px;
+    }
+    .frame .content label{
+        margin:3px 0;
+    }
+    .frame .content input{
+        margin:11px auto;
+        height: 26px;
+    }
+    .frame .content button{
+        margin:9px auto;
+        width:124px;
+        height: 20px;
+        line-height:0;
+    }
+    /* animation-fadein */
+
+    @-webkit-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(19px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(19px) translateY(100px);
+        }
+    }
+
+    @-moz-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(19px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(19px) translateY(100px);
+        }
+    }
+
+    @-ms-keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(19px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(19px) translateY(100px);
+        }
+    }
+
+    @keyframes fadeinT {
+        0% {
+            opacity: 0;
+            transform: translateX(19px) translateY(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(19px) translateY(100px);
+        }
+    }
+}

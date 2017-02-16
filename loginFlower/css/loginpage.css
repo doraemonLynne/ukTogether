@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/*css Reset*/
+
+html,
+body,
+div,
+ul,
+ol,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+dl {
+    list-style: none outside none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+iframe {
+    display: block;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+input,
+select,
+button {
+    border-width: 0;
+    outline: 0;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    content: "";
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*解决IE6\7兼容问题*/
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:visited {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*general*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    background: #2f2237;
+}
+/*general*/
+
+header {
+    height: 40px;
+}
+.flowers{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.flower1{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+.flower2{
+    position: absolute;
+    top: 262px;
+    left: 55px;
+
+}
+.flower3{
+    position: absolute;
+    top: 160px;
+    left: 3px;
+}
+.stem{
+    position: absolute;
+    top: 300px;
+}
+.main .container{
+    border-radius: 10px;
+    width: 1170px;
+    float: right;
+    background: #f2efe3;
+    padding: 20px;
+}
+.main .nav{
+   float: left;
+   margin-left: 40px;
+   margin-top: 20px;
+}
+.main .nav a{
+    text-indent: 6px;
+    text-align: left;
+    width: 200px;
+    display: block;
+    font-size: 1.5em;
+    color: #fff;
+    margin: 5px 0px;
+    text-decoration: none;
+    padding:10px 0;
+    border-radius: 10px;
+    -webkit-transition: width 0.7s;
+    -moz-transition: width 0.7s;
+    -o-transition: width 0.7s;
+    transition: width 0.7s;
+}
+.main .nav a:hover{
+    width: 250px;
+}
+.main .nav .nav1{
+    background: #E8D4A7;
+}
+.main .nav .nav2{
+    background: #b1aaa1;
+}
+.main .nav .nav3{
+    background: #3f3d52;
+}
+.main .nav .nav4{
+    background: #140910;
+}
+.main .nav .nav5{
+    background: #858f31;
+}
+.main .logo{
+    float: right;
+    margin-right: 30px;
+}
+.main .logo .fir{
+    font-family: "meng";
+    color: #b1aaa1;
+    font-size: 5em;
+}
+.main .logo .sec{
+    font-family: "xiang";
+    color: #474863;
+    font-size: 2em;
+}
+.main .logo .thi{
+    font-family: "xiao";
+    color: #261021;
+    font-size: 3em;
+}
+.main .logo .for{
+    font-family: "zhen";
+    color: #858f31;
+    font-size: 4em;
+}
+.main article{
+    margin: 10px 0;
+    width: 300px;
+    float: right;
+    clear: right;
+}
+.main article p{
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    border-bottom: 1px dashed #858f31;
+}
+

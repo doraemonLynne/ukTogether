@@ -1,0 +1,59 @@
+@charset "utf-8";
+/*css Reset*/
+
+html, body, div, ul, ol, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, form,
+	input, select, button, textarea, iframe, table, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol, dl {list-style: none outside none;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+iframe {display: block;}
+
+img {
+	border: 0;
+	vertical-align: top;
+}
+
+em,i {font-style:normal;}
+
+table {border-collapse: collapse;}
+
+input[type="radio"], input[type="checkbox"] {vertical-align: middle;}
+
+input, select, button {
+	border-width: 0;
+	outline: 0;
+	font-family: 'Microsoft Yahei';
+}
+
+.clearfix:after {
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	content: "";
+	visibility: hidden;
+}
+
+.clearfix {
+	*zoom: 1; /*解决IE6\7兼容问题*/
+}
+
+body {font: normal 12px/1.5 'Microsoft Yahei';}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+a:visited {outline: none;}
+
+a:hover {text-decoration: underline;}
+

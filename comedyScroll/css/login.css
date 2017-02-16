@@ -1,0 +1,434 @@
+@charset "utf-8";
+
+/*css Reset*/
+
+html,
+body,
+div,
+ul,
+ol,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+dl {
+    list-style: none outside none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+iframe {
+    display: block;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: middle;
+}
+
+input,
+select,
+button {
+    border-width: 0;
+    outline: 0;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    content: "";
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*解决IE6\7兼容问题*/
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:visited {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Bg */
+
+#bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#bg li {
+    float: left;
+}
+
+#bg li img {
+    width: 1600px;
+    height: 900px;
+}
+
+
+/* Overlay */
+
+@-moz-keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@-webkit-keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@-o-keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@-ms-keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes overlay {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+#overlay {
+    -moz-animation: overlay 1.5s 1.5s forwards;
+    -webkit-animation: overlay 1.5s 1.5s forwards;
+    -o-animation: overlay 1.5s 1.5s forwards;
+    -ms-animation: overlay 1.5s 1.5s forwards;
+    animation: overlay 1.5s 1.5s forwards;
+    background-attachment: fixed;
+    background-image: url("../images/pattern.png");
+    background-position: top left;
+    background-repeat: repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+/*login*/
+
+
+/* animation-fadein */
+
+@-webkit-keyframes fadeinT {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fadeinT {
+    0% {
+        opacity: 0;
+        -moz-transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        -moz-transform: translateY(0);
+    }
+}
+
+@-ms-keyframes fadeinT {
+    0% {
+        opacity: 0;
+        -ms-transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        -ms-transform: translateY(0);
+    }
+}
+
+@keyframes fadeinT {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* animation-pulse */
+
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+    50% {
+        -webkit-box-shadow: 0 0 25px rgba(246, 208, 107, 0.9);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+}
+
+@-moz-keyframes pulse {
+    0% {
+        -moz-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+    50% {
+        -moz-box-shadow: 0 0 25px rgba(246, 208, 107, 0.9);
+    }
+    100% {
+        -moz-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+}
+
+@-ms-keyframes pulse {
+    0% {
+        -ms-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+    50% {
+        -ms-box-shadow: 0 0 25px rgba(246, 208, 107, 0.9);
+    }
+    100% {
+        -ms-box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(246, 208, 107, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(246, 208, 107, 0.2);
+    }
+}
+
+.a-fadeinT {
+    -webkit-animation: fadeinT 1.5s 1s backwards;
+    -moz-animation: fadeinT 1.5s 1s backwards;
+    -ms-animation: fadeinT 1.5s 1s backwards;
+    animation: fadeinT 1.5s 1s backwards;
+}
+
+.loginframe {
+    width: 380px;
+    height: 380px;
+    margin: 8% auto;
+    padding: 30px 0;
+    border-radius: 25px;
+}
+
+.frame {
+    padding: 10px;
+    width: 380px;
+    height: 380px;
+    background: #ddd;
+    background: rgba(23, 25, 28, 0.1);
+    margin: 0 auto;
+    border-radius: 4px;
+    color: #7e7975;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+.frame .heading {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #EBE6E2;
+    padding-bottom: 10px;
+}
+
+.frame .heading .first {
+    color: #ffb347;
+    padding-right: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "microsoft yahei";
+}
+
+.frame .heading .middle {
+    color: #222;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "microsoft yahei";
+}
+
+.frame .heading .second a {
+    color: #ffb347;
+    /*color: #E73327;*/
+    padding-left: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "microsoft yahei";
+}
+
+.frame .content {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 90%;
+}
+
+.frame .content label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #ffb347;
+    margin: 15px 0;
+    font-family: "microsoft yahei";
+    font-weight: 700;
+}
+
+.frame .content .usernameLabel:before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    content: "\f007";
+    margin-right: 5px;
+}
+
+.frame .content .passwordLabel:before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    content: "\f023";
+    margin-right: 5px;
+}
+
+.frame .content input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 13px 0;
+    width: 100%;
+    margin: 0 auto;
+    text-indent: 7px;
+    font-size: 16px;
+}
+
+.frame .content input:focus {
+    -webkit-animation: pulse 1.5s infinite ease-in-out;
+    -moz-animation: pulse 1.5s infinite ease-in-out;
+    -ms-animation: pulse 1.5s infinite ease-in-out;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.frame .content button {
+    display: block;
+    margin: 50px auto;
+    background: #fbd568;
+    width: 180px;
+    height: 50px;
+    padding: 15px 5px;
+    background-image: -webkit-linear-gradient(#fbd568 0%, #ffb347);
+    background-image: -o-linear-gradient(#fbd568 0%, #ffb347);
+    background-image: linear-gradient(#fbd568 0%, #ffb347);
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 0 0 1px #aaa;
+    font-size: 16px;
+}
+
+.frame .content button:hover {
+    -webkit-animation: pulse 1.5s infinite ease-in-out;
+    -moz-animation: pulse 1.5s infinite ease-in-out;
+    -ms-animation: pulse 1.5s infinite ease-in-out;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+
+/*login*/

@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/*css Reset*/
+
+html, body, div, ul, ol, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, form,
+    input, select, button, textarea, iframe, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol, dl {list-style: none outside none;}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 12px;
+}
+
+iframe {display: block;}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+em,i {font-style:normal;}
+
+table {border-collapse: collapse;}
+
+input[type="radio"], input[type="checkbox"] {vertical-align: middle;}
+
+input, select, button {
+    border-width: 0;
+    outline: 0;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    content: "";
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1; /*解决IE6\7兼容问题*/
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:visited {outline: none;}
+
+a:hover {text-decoration: underline;}
+
+/*general*/
+@font-face{
+    font-family:'FontAwesome';
+    src:url('font/font-awesome/fontawesome-webfont.eot?v=3.2.1');
+    src:url('font/font-awesome/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'),
+        url('font/font-awesome/fontawesome-webfont.woff?v=3.2.1') format('woff'),
+        url('font/font-awesome/fontawesome-webfont.ttf?v=3.2.1') format('truetype'),
+        url('font/font-awesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+*,*::before,*::after{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Lato', Calibri, Arial, sans-serif; 
+}
+/*general*/
+
+/*login*/
+.loginframe{
+    margin: 30px auto;
+    background:url(images/loginbg1.jpg) no-repeat;
+    width:350px;
+    height: 331px; 
+    padding:30px 0;
+    border-radius: 25px;
+}
+.frame{
+    padding: 10px;
+    width: 300px;
+    background:#fffaf6;
+    margin:0 auto;
+    border-radius: 4px;
+    color: #7e7975;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2), 0 1px 5px rgba(0,0,0,0.2), 0 0 0 12px rgba(255,255,255,0.4);
+}
+.frame .heading{
+    border-bottom: 1px solid #EBE6E2;
+    padding-bottom: 10px;
+}
+.frame .heading .first{
+    color: #6c6763;
+    padding-right: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.frame .heading .middle{
+    color: #aaa;
+    font-size: 12px;
+}
+.frame .heading .second{
+    color: #ffb347;
+    padding-left: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.frame .content{
+    padding-top: 10px;
+}
+.frame .content label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #888;
+    margin:5px 0;
+}
+.frame .content .usernameLabel:before{
+    font-family:'FontAwesome';
+    display: inline-block;
+    content:"\f007";
+    margin-right: 5px;
+}
+.frame .content .passwordLabel:before{
+    font-family:'FontAwesome';
+    display: inline-block;
+    content: "\f023";
+    margin-right: 5px;
+}
+.frame .content input{
+    border: 3px solid #ebe6e2;
+    padding:10px 5px;
+    width: 250px;
+    -webkit-transition: border 0.3s;
+    -moz-transition: border 0.3s;
+    -o-transition: border 0.3s;
+    transition: border 0.3s;
+}
+.frame .content input:hover{
+    border: 3px solid #ccc;
+}
+.frame .content button{
+    margin: 20px 0;
+    background: #fbd568;
+    width: 100px;
+    padding: 10px 5px;
+    background-image: -webkit-linear-gradient(#fbd568 0%, #ffb347);
+    background-image: -o-linear-gradient(#fbd568 0%, #ffb347);
+    background-image: linear-gradient(#fbd568 0%, #ffb347);
+    border-radius: 3px;
+    color: #fff;
+    text-shadow:0 0 1px #aaa;
+
+}
+/*login*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

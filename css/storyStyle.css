@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-10-31 19:38:00
+ * @version $Id$
+ */
+
+body {
+	height: 800px;
+    background: url(../images/pattern.png), url(../images/4.jpg);
+    background-size: auto, cover;
+    background-position: center, center;
+    background-repeat: repeat, no-repeat;
+}
+
+.nav {
+    width: 50%;
+    float: left;
+}
+
+
+/*list*/
+
+.list {
+    list-style-type: none;
+    margin: 10% 10%;
+}
+
+.list li {
+	margin: 10px 0;
+    display: block;
+    border-radius: 20px;
+}
+
+.list li a {
+    border-radius: 20px;
+    display: block;
+    text-decoration: none;
+    color: #EEB213;
+    background: rgba(0, 0, 0, 0.7);
+    font-size: 3.5em;
+    text-transform: uppercase;
+    padding: 5px 0 5px 10px;
+    letter-spacing: 1px;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+}
+
+.list:hover li a {
+    color: transparent;
+    background: rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 10px #EEB213;
+}
+
+.list li:hover a {
+    color: #EEB213;
+    background: #000;
+}
